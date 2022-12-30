@@ -41,7 +41,7 @@ const HomeBalance = () => {
             <Octicons name="diff-added" size={20} />
           </Text>
           <Text
-            className="text-white text-lg pr-3"
+            className="text-white text-base pr-3 py-1"
             style={{ fontFamily: "Poppins_400Regular" }}
           >
             Add
