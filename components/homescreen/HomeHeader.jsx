@@ -7,11 +7,13 @@ const HomeHeader = () => {
   return (
     <View className="w-11/12 flex flex-row items-center justify-between">
       <View className="flex flex-row items-center">
-        <Image
-          className="bg-[#dddddd] rounded-full"
-          style={{ width: 40, height: 40 }}
-          source={require("../../assets/profile.png")}
-        />
+        <View>
+          <Image
+            className="bg-[#dddddd] rounded-full"
+            style={{ width: 40, height: 40 }}
+            source={require("../../assets/profile.png")}
+          />
+        </View>
         <Text
           className="mx-4 text-base text-theme1"
           style={{ fontFamily: "Poppins_400Regular" }}
