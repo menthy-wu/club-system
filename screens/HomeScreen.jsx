@@ -5,6 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import HomeHeader from "../components/homescreen/HomeHeader";
 import HomeBalance from "../components/homescreen/HomeBalance";
 import HomeClasses from "../components/homescreen/HomeClasses";
+import HomePosts from "../components/homescreen/HomePosts";
+import { ScrollView } from "react-native-gesture-handler";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -13,11 +15,17 @@ const HomeScreen = () => {
   }, []);
   return (
     <SafeAreaView className="flex flex-col w-full items-center justify-center">
-      <HomeHeader />
-      <View className="h-8" />
-      <HomeBalance />
-      <View className="h-8" />
-      <HomeClasses />
+      <ScrollView className="flex flex-col w-full">
+        <View className="flex flex-col w-full items-center justify-center">
+          <HomeHeader />
+          <View className="h-8" />
+          <HomeBalance />
+          <View className="h-8" />
+          <HomeClasses />
+          <View className="h-8" />
+          <HomePosts />
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
