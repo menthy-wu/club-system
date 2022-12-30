@@ -2,11 +2,11 @@ import { View, Text, Image } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView } from "react-native-gesture-handler";
 import HomeHeader from "./homescreen/HomeHeader";
 import HomeBalance from "./homescreen/HomeBalance";
 import HomeClasses from "./homescreen/HomeClasses";
 import HomePosts from "./homescreen/HomePosts";
-import { ScrollView } from "react-native-gesture-handler";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
