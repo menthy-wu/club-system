@@ -6,6 +6,7 @@ import { ScrollView } from "react-native-gesture-handler";
 import WalletHeader from "./WalletScreen/WalletHeader";
 import WalletBalance from "./WalletScreen/WalletBalance";
 import WalletOptions from "./WalletScreen/WalletOptions";
+import WalletAmountDue from "./WalletScreen/WalletAmountDue";
 import WalletTransactions from "./WalletScreen/WalletTransactions";
 
 const WalletScreen = () => {
@@ -19,6 +20,9 @@ const WalletScreen = () => {
       <WalletBalance />
       <View className="h-8" />
       <WalletOptions />
+      <View className="h-8" />
+      <WalletAmountDue />
+      <View className="h-8" />
       <WalletTransactions />
     </View>
   );
