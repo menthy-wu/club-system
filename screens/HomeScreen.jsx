@@ -14,7 +14,9 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className="flex flex-col w-full items-center justify-center">
       <HomeHeader />
+      <View className="h-5" />
       <HomeBalance />
+      <View className="h-5" />
       <HomeClasses />
     </SafeAreaView>
   );
