@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const BalanceScreen = () => {
+const CalanderScreen = () => {
   return (
     <View>
-      <Text>BalanceScreen</Text>
+      <Text>CalanderScreen</Text>
     </View>
   )
 }
 
-export default BalanceScreen
+export default CalanderScreen
