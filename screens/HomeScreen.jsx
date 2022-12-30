@@ -1,6 +1,8 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import HomeHeader from "../components/homescreen/HomeHeader";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -8,9 +10,9 @@ const HomeScreen = () => {
     navigation.setOptions({ headerShown: false });
   }, []);
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <SafeAreaView className="flex flex-col w-full items-center justify-center">
+      <HomeHeader />
+    </SafeAreaView>
   );
 };
 
