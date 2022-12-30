@@ -9,11 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {},
     extend: {
-      backgroundImage: {
-        topography: "url('../assets/topography.svg')",
-        formalInvitation: "url('../assets/formal-invitation.svg')",
-        jupiter: "url('../assets/jupiter.svg')",
-      },
+      backgroundImage: {},
       colors: {
         theme1: "#28304E",
         theme2: "#DE783F",

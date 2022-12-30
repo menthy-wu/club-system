@@ -14,9 +14,10 @@ const WalletScreen = () => {
     navigation.setOptions({ headerShown: false });
   }, []);
   return (
-    <View>
+    <View className="w-full flex-col flex justify-center items-center">
       <WalletHeader />
       <WalletBalance />
+      <View className="h-8" />
       <WalletOptions />
       <WalletTransactions />
     </View>

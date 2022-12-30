@@ -8,6 +8,8 @@ import ProfileScreen from "../components/ProfileScreen";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 
+import LoginScreen from "./LoginScreen"
+
 const Tab = createBottomTabNavigator();
 const User = () => {
   return (
@@ -35,7 +37,7 @@ const User = () => {
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Wallet" component={WalletScreen} />
       <Tab.Screen name="Calander" component={CalanderScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Profile" component={LoginScreen} />
     </Tab.Navigator>
   );
 };
