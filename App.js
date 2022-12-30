@@ -3,8 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Text, View } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "./screens/LoginScreen";
-import HomeScreen from "./screens/HomeScreen";
-
+import User from "./screens/User";
 import {
   useFonts,
   Poppins_100Thin,
@@ -49,14 +48,10 @@ export default function App() {
     Poppins_900Black,
     Poppins_900Black_Italic,
   });
-
   if (fontsLoaded) {
     return (
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Home" component={HomeScreen} />
-        </Stack.Navigator>
+        <User/>
       </NavigationContainer>
     );
   }
