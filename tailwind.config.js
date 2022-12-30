@@ -2,13 +2,12 @@
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./screens/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontFamily: {
-      poppin: ["Poppins"],
-    },
+    fontFamily: {},
     extend: {
       colors: {
-        theme1: "#181D31",
+        theme1: "#28304E",
         theme2: "#FF8541",
+        gray: "#616161",
       },
     },
   },
