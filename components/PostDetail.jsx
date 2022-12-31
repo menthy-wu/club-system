@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const Classes = () => {
+const PostDetail = () => {
   return (
     <View>
-      <Text>Classes</Text>
+      <Text>PostDetail</Text>
     </View>
   );
 };
 
-export default Classes;
+export default PostDetail;

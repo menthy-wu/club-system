@@ -2,13 +2,18 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import HomeScreen from "./components/HomeScreen";
 import WalletScreen from "./components/WalletScreen";
 import CalanderScreen from "./components/CalanderScreen";
 import ProfileScreen from "./components/ProfileScreen";
 import ClassDetail from "./components/ClassDetail";
-import { Ionicons } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
+import AllClasses from "./components/AllClasses";
+import PostDetail from "./components/PostDetail";
+import AccountBalanceDetail from "./components/AccountBalanceDetail";
+import AddMoney from "./components/AddMoney";
+import Setting from "./components/Setting";
 
 import {
   useFonts,
@@ -38,6 +43,14 @@ const HomeStackScreen = () => {
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="ClassDetail" component={ClassDetail} />
+      <HomeStack.Screen name="AllClasses" component={AllClasses} />
+      <HomeStack.Screen name="PostDetail" component={PostDetail} />
+      <HomeStack.Screen name="AddMoney" component={AddMoney} />
+      <HomeStack.Screen name="Setting" component={Setting} />
+      <HomeStack.Screen
+        name="AccountBalanceDetail"
+        component={AccountBalanceDetail}
+      />
     </HomeStack.Navigator>
   );
 };
