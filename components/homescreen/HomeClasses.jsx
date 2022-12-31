@@ -24,15 +24,8 @@ const HomeClasses = () => {
         </TouchableOpacity>
       </View>
       <ScrollView className="w-11/12" horizontal={true}>
-        {classes.map((element, index) => {
-          return (
-            <HomeClass
-              key={index}
-              title={element.name}
-              imageUrl={element.coverImg}
-              description={element.description}
-            />
-          );
+        {classes.map((course, index) => {
+          return <HomeClass key={index} course={course} />;
         })}
       </ScrollView>
     </View>

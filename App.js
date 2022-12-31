@@ -130,13 +130,13 @@ export default function App() {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === "Home") {
+              if (route.name === "HomeStack") {
                 iconName = focused ? "ios-home" : "ios-home-outline";
-              } else if (route.name === "Wallet") {
+              } else if (route.name === "WalletStack") {
                 iconName = focused ? "ios-wallet" : "ios-wallet-outline";
-              } else if (route.name === "Calander") {
+              } else if (route.name === "CalanderStack") {
                 iconName = focused ? "md-calendar" : "md-calendar-sharp";
-              } else if (route.name === "Profile") {
+              } else if (route.name === "ProfileStack") {
                 iconName = focused ? "user-alt" : "user";
                 return (
                   <FontAwesome5 name={iconName} size={size} color={color} />
@@ -149,22 +149,22 @@ export default function App() {
           })}
         >
           <Tab.Screen
-            name="Home"
+            name="HomeStack"
             component={HomeStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="Wallet"
+            name="WalletStack"
             component={WalletStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="Calander"
+            name="CalanderStack"
             component={CalanderStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="Profile"
+            name="ProfileStack"
             component={ProfileStackScreen}
             options={{ headerShown: false }}
           />
