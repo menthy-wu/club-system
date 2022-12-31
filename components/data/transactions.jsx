@@ -2,7 +2,7 @@ export const transactions = [
   {
     title: "add from 1234",
     time: "8:34pm 12-23-2022",
-    amount: "140.00",
+    amount: "+140.00",
     color: "green-400",
   },
   {
@@ -20,7 +20,7 @@ export const transactions = [
   {
     title: "add from 1234",
     time: "8:34pm 12-20-2022",
-    amount: "140.00",
+    amount: "+140.00",
     color: "green-400",
   },
 ];

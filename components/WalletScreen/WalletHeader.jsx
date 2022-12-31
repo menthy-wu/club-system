@@ -1,8 +1,11 @@
 import { View, Text, ImageBackground, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
+import { TouchableOpacity } from "react-native";
 
 const WalletHeader = () => {
+  const navigation = useNavigation();
   return (
     <View className="bg-theme1 justify-center items-center h-[300px] w-full">
       <ImageBackground
@@ -11,11 +14,14 @@ const WalletHeader = () => {
         resizeMode="cover"
       >
         <View className="bg-topography w-full justify-center items-center h-[300px]">
-          <View className="w-11/12 flex justify-end flex-row items-center -mt-16">
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Setting")}
+            className="w-11/12 flex justify-end flex-row items-center -mt-16"
+          >
             <Text className="text-theme2 m-2">
               <Ionicons name="ios-settings" size={24} />
             </Text>
-          </View>
+          </TouchableOpacity>
           <Text
             className="text-white text-lg mb-2"
             style={{ fontFamily: "Poppins_700Bold" }}

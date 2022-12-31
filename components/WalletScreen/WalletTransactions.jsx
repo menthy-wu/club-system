@@ -10,7 +10,7 @@ const WalletTransactions = () => {
       <View className="w-10/12 flex flex-row items-center justify-between">
         <View className="">
           <Text
-            className="text-xl w-full text-left mt-2"
+            className="text-base w-full text-left mt-2"
             style={{ fontFamily: "Poppins_400Regular" }}
           >
             Transactions
@@ -26,6 +26,7 @@ const WalletTransactions = () => {
           <Ionicons name="ellipsis-horizontal-sharp" size={24} />
         </Text>
       </View>
+      <View className="w-full bg-theme1 h-[1px]" />
       {transactions.map((transaction, index) => {
         return (
           <WalletTransaction

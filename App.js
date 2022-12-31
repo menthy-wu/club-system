@@ -13,7 +13,13 @@ import AllClasses from "./components/AllClasses";
 import PostDetail from "./components/PostDetail";
 import AccountBalanceDetail from "./components/AccountBalanceDetail";
 import AddMoney from "./components/AddMoney";
+import AmountDueDetail from "./components/AmountDueDetail";
 import Setting from "./components/Setting";
+import MakeAPayment from "./components/MakeAPayment";
+import PaymentMethod from "./components/PaymentMethod";
+import WithDraw from "./components/WithDraw";
+import PaymentPlan from "./components/PaymentPlan";
+import TransactionDetail from "./components/TransactionDetail";
 
 import {
   useFonts,
@@ -59,6 +65,22 @@ const WalletStackScreen = () => {
   return (
     <WalletStack.Navigator>
       <WalletStack.Screen name="Wallet" component={WalletScreen} />
+      <WalletStack.Screen name="AddMoney" component={AddMoney} />
+      <WalletStack.Screen name="Setting" component={Setting} />
+      <WalletStack.Screen name="MakeAPayment" component={MakeAPayment} />
+      <WalletStack.Screen name="PaymentMethod" component={PaymentMethod} />
+      <WalletStack.Screen name="WithDraw" component={WithDraw} />
+      <WalletStack.Screen name="PaymentPlan" component={PaymentPlan} />
+      <WalletStack.Screen name="AmountDueDetail" component={AmountDueDetail} />
+      <WalletStack.Screen
+        name="TransactionDetail"
+        component={TransactionDetail}
+      />
+
+      <WalletStack.Screen
+        name="AccountBalanceDetail"
+        component={AccountBalanceDetail}
+      />
     </WalletStack.Navigator>
   );
 };

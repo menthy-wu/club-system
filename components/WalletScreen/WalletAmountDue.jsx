@@ -1,12 +1,18 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
+import { TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const WalletAmountDue = () => {
+  const navigation = useNavigation();
   return (
-    <View className="bg-white w-full flex flex-col items-center justify-center">
+    <TouchableOpacity
+      onPress={() => navigation.navigate("AmountDueDetail")}
+      className="bg-white w-full flex flex-col items-center justify-center"
+    >
       <Text
-        className="text-xl ml-10 w-full text-left my-2"
+        className="text-base ml-10 w-full text-left my-2"
         style={{ fontFamily: "Poppins_400Regular" }}
       >
         Amount Due
@@ -14,7 +20,7 @@ const WalletAmountDue = () => {
       <View className="flex flex-row justify-between items-center w-11/12">
         <View>
           <Text
-            className="text-base ml-5"
+            className="text-sm ml-5"
             style={{ fontFamily: "Poppins_400Regular" }}
           >
             Due 12.28.2022
@@ -30,7 +36,7 @@ const WalletAmountDue = () => {
           <Ionicons name="ellipsis-horizontal-sharp" size={24} />
         </Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

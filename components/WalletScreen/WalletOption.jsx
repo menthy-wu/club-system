@@ -1,29 +1,35 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
-import { AntDesign } from "@expo/vector-icons";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
-const WalletOption = ({ title,img }) => {
+const WalletOption = ({ title, img, nav}) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity className="flex flex-col mr-3 w-[200px]">
-      <View className="bg-theme2 h-[100px] rounded-t-3xl">
+    <TouchableOpacity
+      className="flex flex-col mr-3 w-[150px] drop-shadow-lg"
+      onPress={() => navigation.navigate(nav)}
+    >
+      <View className="bg-theme2 h-[60px] rounded-t-2xl">
         <Image
-          className="justify-center items-center h-full w-full rounded-t-3xl"
+          className="justify-center items-center h-full w-full rounded-t-2xl"
           source={img}
           resizeMode="repeat"
         />
       </View>
-      <View className="bg-white rounded-b-3xl flex flex-row items-center justify-center w-full">
-        <Text className="text-theme2 mr-1 ml-3">
-          <MaterialIcons name="payments" size={24} color="black" />
+      <View className="bg-white rounded-b-2xl flex flex-row items-center justify-center w-full h-[40px]">
+        <Text className="text-theme1 w-3/12 flex items-center justify-center text-center">
+          <MaterialIcons name="payments" size={24} />
         </Text>
-        <Text
-          className="ml-1 mr-3 mt-2 text-base mb-2"
-          style={{ fontFamily: "Poppins_700Bold" }}
-        >
-          {title}
-        </Text>
+        <View className="w-8/12 flex items-center justify-center">
+          <Text
+            className="text-xs text-left"
+            style={{ fontFamily: "Poppins_700Bold" }}
+          >
+            {title}
+          </Text>
+        </View>
       </View>
     </TouchableOpacity>
   );
