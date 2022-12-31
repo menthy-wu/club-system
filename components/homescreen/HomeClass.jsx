@@ -19,11 +19,14 @@ const HomeClass = ({ course }) => {
         >
           {course.name}
         </Text>
-        <View className="ml-3 flex flex-row items-center justify-start mb-3 w-[200px] h-[50px]">
+        <View className="ml-3 flex flex-row items-start justify-start mb-3 w-[200px] h-[30px]">
           <Text className="text-theme2 mr-2">
             <AntDesign name="arrowright" size={15} />
           </Text>
-          <Text className="text-gray text-xs truncate">
+          <Text
+            numberOfLines={2}
+            className="text-gray text-xs overflow-hidden w-9/12"
+          >
             {course.description}
           </Text>
         </View>

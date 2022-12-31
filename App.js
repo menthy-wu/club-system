@@ -47,7 +47,7 @@ const HomeStack = createNativeStackNavigator();
 const HomeStackScreen = () => {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
       <HomeStack.Screen name="ClassDetail" component={ClassDetail} />
       <HomeStack.Screen name="AllClasses" component={AllClasses} />
       <HomeStack.Screen name="PostDetail" component={PostDetail} />
@@ -64,7 +64,7 @@ const WalletStack = createNativeStackNavigator();
 const WalletStackScreen = () => {
   return (
     <WalletStack.Navigator>
-      <WalletStack.Screen name="Wallet" component={WalletScreen} />
+      <WalletStack.Screen name="WalletScreen" component={WalletScreen} />
       <WalletStack.Screen name="AddMoney" component={AddMoney} />
       <WalletStack.Screen name="Setting" component={Setting} />
       <WalletStack.Screen name="MakeAPayment" component={MakeAPayment} />
@@ -88,7 +88,7 @@ const CalanderStact = createNativeStackNavigator();
 const CalanderStackScreen = () => {
   return (
     <CalanderStact.Navigator>
-      <CalanderStact.Screen name="Calander" component={CalanderScreen} />
+      <CalanderStact.Screen name="CalanderScreen" component={CalanderScreen} />
     </CalanderStact.Navigator>
   );
 };
@@ -96,7 +96,7 @@ const ProfileStact = createNativeStackNavigator();
 const ProfileStackScreen = () => {
   return (
     <ProfileStact.Navigator>
-      <ProfileStact.Screen name="Profile" component={ProfileScreen} />
+      <ProfileStact.Screen name="ProfileScreen" component={ProfileScreen} />
     </ProfileStact.Navigator>
   );
 };
@@ -130,13 +130,13 @@ export default function App() {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === "HomeStack") {
+              if (route.name === "Home") {
                 iconName = focused ? "ios-home" : "ios-home-outline";
-              } else if (route.name === "WalletStack") {
+              } else if (route.name === "Wallet") {
                 iconName = focused ? "ios-wallet" : "ios-wallet-outline";
-              } else if (route.name === "CalanderStack") {
+              } else if (route.name === "Calander") {
                 iconName = focused ? "md-calendar" : "md-calendar-sharp";
-              } else if (route.name === "ProfileStack") {
+              } else if (route.name === "Profile") {
                 iconName = focused ? "user-alt" : "user";
                 return (
                   <FontAwesome5 name={iconName} size={size} color={color} />
@@ -149,22 +149,22 @@ export default function App() {
           })}
         >
           <Tab.Screen
-            name="HomeStack"
+            name="Home"
             component={HomeStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="WalletStack"
+            name="Wallet"
             component={WalletStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="CalanderStack"
+            name="Calander"
             component={CalanderStackScreen}
             options={{ headerShown: false }}
           />
           <Tab.Screen
-            name="ProfileStack"
+            name="Profile"
             component={ProfileStackScreen}
             options={{ headerShown: false }}
           />
