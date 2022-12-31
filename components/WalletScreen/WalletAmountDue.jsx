@@ -6,7 +6,7 @@ const WalletAmountDue = () => {
   return (
     <View className="bg-white w-full flex flex-col items-center justify-center">
       <Text
-        className="text-xl ml-5 w-full text-left my-2"
+        className="text-xl ml-10 w-full text-left my-2"
         style={{ fontFamily: "Poppins_400Regular" }}
       >
         Amount Due

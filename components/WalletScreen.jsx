@@ -15,16 +15,18 @@ const WalletScreen = () => {
     navigation.setOptions({ headerShown: false });
   }, []);
   return (
-    <View className="w-full flex-col flex justify-center items-center">
-      <WalletHeader />
-      <WalletBalance />
-      <View className="h-8" />
-      <WalletOptions />
-      <View className="h-8" />
-      <WalletAmountDue />
-      <View className="h-8" />
-      <WalletTransactions />
-    </View>
+    <ScrollView>
+      <View className="w-full flex-col flex justify-center items-center">
+        <WalletHeader />
+        <WalletBalance />
+        <View className="h-8" />
+        <WalletOptions />
+        <View className="h-8" />
+        <WalletAmountDue />
+        <View className="h-8" />
+        <WalletTransactions />
+      </View>
+    </ScrollView>
   );
 };
 
