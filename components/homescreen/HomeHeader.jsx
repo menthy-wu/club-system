@@ -10,12 +10,12 @@ const HomeHeader = () => {
         <View>
           <Image
             className="bg-[#dddddd] rounded-full"
-            style={{ width: 40, height: 40 }}
+            style={{ width: 30, height: 30 }}
             source={require("../../assets/profile.png")}
           />
         </View>
         <Text
-          className="mx-4 text-base text-theme1"
+          className="mx-4 text-sm text-theme1"
           style={{ fontFamily: "Poppins_400Regular" }}
         >
           {student.club}

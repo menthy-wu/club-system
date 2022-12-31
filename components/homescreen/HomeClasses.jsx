@@ -8,7 +8,7 @@ const HomeClasses = () => {
   return (
     <View className="w-full flex flex-col items-center justify-center">
       <View className="w-11/12 flex flex-row justify-between items-center my-1">
-        <Text className="text-lg" style={{ fontFamily: "Poppins_400Regular" }}>
+        <Text className="text-base" style={{ fontFamily: "Poppins_400Regular" }}>
           Classes in my club
         </Text>
         <Text className="text-theme2">

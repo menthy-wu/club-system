@@ -10,12 +10,12 @@ const HomePost = ({ poster, time, title, body }) => {
         <View className="flex flex-row items-center ">
           <Image
             className="bg-[#dddddd] rounded-full"
-            style={{ width: 50, height: 50 }}
+            style={{ width: 30, height: 30 }}
             source={require("../../assets/profile.png")}
           />
           <View className="ml-4">
             <Text
-              className="text-lg mt-2"
+              className="text-base mt-2"
               style={{ fontFamily: "Poppins_400Regular" }}
             >
               {poster}
@@ -35,18 +35,18 @@ const HomePost = ({ poster, time, title, body }) => {
         </TouchableOpacity>
       </View>
       <Text
-        className="ml-7 text-2xl mt-3"
-        style={{ fontFamily: "Poppins_400Regular" }}
+        className="ml-7 text-lg mt-3"
+        style={{ fontFamily: "Poppins_600SemiBold" }}
       >
         {title}
       </Text>
       <Text
-        className="ml-7 text-base mt-3 mb-6 text-gray"
+        className="ml-7 text-xs mb-6 text-gray"
         style={{ fontFamily: "Poppins_400Regular" }}
       >
         {body}
       </Text>
-      <View className = "w-full bg-theme1 h-[1px]"/>
+      <View className="w-full bg-theme1 h-[1px]" />
     </View>
   );
 };

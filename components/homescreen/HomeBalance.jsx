@@ -14,21 +14,21 @@ const HomeBalance = () => {
         </Text>
         <View>
           <Text
-            className="text-gray"
+            className="text-gray text-xs"
             style={{ fontFamily: "Poppins_400Regular" }}
           >
             my balance
           </Text>
           <View className="flex flex-row items-end">
             <Text
-              className="text-xl text-gray mr-1"
+              className="text-base text-gray mr-1"
               style={{ fontFamily: "Poppins_400Regular" }}
             >
               us
             </Text>
             <Text
-              className="text-3xl"
-              style={{ fontFamily: "Poppins_400Regular" }}
+              className="text-xl"
+              style={{ fontFamily: "Poppins_500Medium" }}
             >
               ${student.balance}
             </Text>
@@ -38,11 +38,11 @@ const HomeBalance = () => {
       <TouchableOpacity>
         <View className="flex flex-row bg-theme2 m-3 justify-center items-center rounded-full">
           <Text className="text-white pl-3 pr-1">
-            <Octicons name="diff-added" size={20} />
+            <Octicons name="diff-added" size={18} />
           </Text>
           <Text
-            className="text-white text-base pr-3 py-1"
-            style={{ fontFamily: "Poppins_400Regular" }}
+            className="text-white text-sm pr-3 py-1"
+            style={{ fontFamily: "Poppins_600SemiBold" }}
           >
             Add
           </Text>
